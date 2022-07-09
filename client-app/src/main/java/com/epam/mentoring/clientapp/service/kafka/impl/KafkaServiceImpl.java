@@ -1,6 +1,8 @@
-package com.epam.mentoring.clientapp.service.kafka;
+package com.epam.mentoring.clientapp.service.kafka.impl;
 
 import com.epam.mentoring.clientapp.entity.Order;
+import com.epam.mentoring.clientapp.service.kafka.KafkaProducer;
+import com.epam.mentoring.clientapp.service.kafka.KafkaService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

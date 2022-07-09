@@ -11,14 +11,14 @@ import static com.epam.mentoring.common.constant.KafkaConstant.*;
 public class KafkaTopicConfig {
 
     @Bean
-    public NewTopic topic1() {
+    public NewTopic orderTopic() {
         return TopicBuilder.name(ORDER_TOPIC)
                 .partitions(PARTITIONS_NUMBER)
                 .build();
     }
 
     @Bean
-    public NewTopic topic2() {
+    public NewTopic notificationTopic() {
         return TopicBuilder.name(NOTIFICATION_TOPIC)
                 .partitions(PARTITIONS_NUMBER)
                 .build();

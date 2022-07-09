@@ -29,9 +29,10 @@ class KafkaTest extends IntegrationTest {
                 .orderId(orderId)
                 .orderStatus(orderStatus)
                 .build();
+        Thread.sleep(2000); // wait for the consumer to join the group
 
         producer.send(NOTIFICATION_TOPIC, "1", data);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         var payload = (Notification) consumer.getPayload();
         assertNotNull(payload);

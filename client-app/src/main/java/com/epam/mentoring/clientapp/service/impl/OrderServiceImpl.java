@@ -1,7 +1,8 @@
-package com.epam.mentoring.clientapp.service;
+package com.epam.mentoring.clientapp.service.impl;
 
 import com.epam.mentoring.clientapp.entity.Order;
 import com.epam.mentoring.clientapp.repository.OrderRepository;
+import com.epam.mentoring.clientapp.service.OrderService;
 import com.epam.mentoring.clientapp.service.kafka.KafkaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
